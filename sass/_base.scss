@@ -4,14 +4,14 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
   2. Remove default margin
 */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -19,8 +19,8 @@
 */
 html,
 body {
-    height: 100%;
-    font-size: 62.5%;
+  height: 100%;
+  font-size: 62.5%;
 }
 
 /*
@@ -29,8 +29,8 @@ body {
   5. Improve text rendering
 */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -41,8 +41,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /*
@@ -52,7 +52,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /*
@@ -65,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -73,24 +73,24 @@ h6 {
 */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 //font
-$roboto: 'Roboto',sans-serif;
+$roboto: "Roboto", sans-serif;
 //colour
 $purple: #280bcabf;
 $cream: #dad7cd8d;
-
+$container:min(90%, 120rem);
 
 @mixin respond($bp) {
-  @if $bp == phone  {
-    @media (max-width:400px) {
+  @if $bp == phone {
+    @media (max-width: 400px) {
       @content;
     }
   }
@@ -106,5 +106,4 @@ $cream: #dad7cd8d;
       @content;
     }
   }
-  
 }

@@ -1,76 +1,74 @@
-@use '../sass/base' as *;
+@use "../sass/base" as *;
 
 .header {
-    background-color: $cream;
-    padding: 1.2rem 1rem;
+  background-color: $cream;
+  padding: 1.9rem 0 1rem;
+  border-bottom: 1px solid hsl(0, 1%, 73%);
+  &_container {
+    margin: 0 auto;
+    width: $container;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    &__logo h2 {
+  }
+  &__logo h2 {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 1.2rem;
+  }
+
+  &__nav {
+    display: none;
+
+    @include respond(tab) {
+      display: flex;
+      width: 70%;
+      max-width: 55rem;
+      justify-content: space-between;
+      align-items: center;
+
+      &--links {
+        font-size: 1.5rem;
         font-family: $roboto;
-        font-weight: 700;
-        font-size: 2rem;
-        padding-left: 1.2rem;
-    }
+        font-weight: 400;
+        display: flex;
+        gap: 1.4rem;
+      }
 
-    &__nav {
-        display: none;
-        padding-right: 1.1rem;
-        
-        @include respond(tab) {
-            display: flex;
-            width: 70%;
-            max-width: 55rem;
-            justify-content: space-between;
-            align-items: center;
+      &--signing {
+        font-size: 1.4rem;
+        font-family: $roboto;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
 
-            &--links {
-                font-size: 1.3rem;
-                font-family: $roboto;
-                font-weight: 400;
-                display: flex;
-                gap: 1.4rem;
-            }
-
-            &--signing {
-                font-size: 1.4rem;
-                font-family: $roboto;
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
-
-
-                &__btn {
-                    border: none;
-                    font-weight: 700;
-                }
-
-                &__btn-up {
-                    border-radius: 7px;
-                    padding: 1.1rem 1.4rem;
-                    background-color: $purple;
-                    
-                    & a {
-                        color: white;
-                        text-decoration: none;
-                        font-weight: 700;
-
-                    }
-                }
-
-            }
-        }
-    }
-
-    &__ham {
-        padding-right: 2rem;
-
-        @include respond(tab) {
-            display: none;
+        &__btn {
+          border: none;
+          font-weight: 700;
         }
 
+        &__btn-up {
+          border: none;
+          border-radius: 7px;
+          padding: 1.1rem 1.4rem;
+          background-color: $purple;
 
+          & a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
     }
-    
+  }
+
+  &__ham {
+    padding-right: 2rem;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
 }

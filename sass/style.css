@@ -83,7 +83,12 @@ ul {
 
 .header {
   background-color: rgba(218, 215, 205, 0.5529411765);
-  padding: 1.2rem 1rem;
+  padding: 1.9rem 0 1rem;
+  border-bottom: 1px solid hsl(0deg, 1%, 73%);
+}
+.header_container {
+  margin: 0 auto;
+  width: min(90%, 120rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +101,6 @@ ul {
 }
 .header__nav {
   display: none;
-  padding-right: 1.1rem;
 }
 @media (min-width: 600px) {
   .header__nav {
@@ -107,7 +111,7 @@ ul {
     align-items: center;
   }
   .header__nav--links {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     display: flex;
@@ -125,6 +129,7 @@ ul {
     font-weight: 700;
   }
   .header__nav--signing__btn-up {
+    border: none;
     border-radius: 7px;
     padding: 1.1rem 1.4rem;
     background-color: rgba(40, 11, 202, 0.7490196078);
@@ -149,7 +154,7 @@ ul {
 }
 
 .create-portfolio {
-  padding-bottom: 3.9rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -163,7 +168,7 @@ ul {
 }
 .create-portfolio__text--h1 {
   margin-top: 1.3rem;
-  font-size: 2.4rem;
+  font-size: 4rem;
   line-height: 1.1;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -189,6 +194,12 @@ ul {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 300ms ease;
+}
+.create-portfolio__text--click-btn:hover {
+  opacity: 1;
 }
 .create-portfolio__text--click-link {
   border: none;
@@ -196,9 +207,13 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-top: 1rem;
+  background: transparent;
 }
 .create-portfolio__text--click-link a {
   color: rgba(40, 11, 202, 0.7490196078);
+}
+.create-portfolio__text--click-link a:hover {
+  text-decoration: none;
 }
 .create-portfolio__text--check {
   margin-top: 1.3rem;
@@ -230,12 +245,9 @@ ul {
 }
 @media (min-width: 600px) {
   .create-portfolio {
-    padding-bottom: 5rem;
     flex-direction: row;
     align-items: center;
-    padding-left: 2rem;
-    width: 90%;
-    max-width: 85rem;
+    width: min(90%, 120rem);
     margin-inline: auto;
   }
   .create-portfolio__text {
