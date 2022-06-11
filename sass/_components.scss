@@ -152,8 +152,35 @@
           padding: 1rem 2rem;
         }
 
-        &-link {
-          margin-top: 0rem;
+        &--click {
+            margin-top: 1.1rem;
+            display: flex;
+            flex-direction: column;
+
+            &-btn {
+                background-color: $purple;
+                color: white;
+                padding: 1.3rem 1.1rem;
+                border-radius: 6px;
+                font-size: 1.3rem;
+                font-family: $roboto;
+                border: none;
+                cursor: pointer;
+                
+            }
+            
+            &-link {
+                border: none;
+                font-size: 1.5rem;
+                font-family: $roboto;
+                font-weight: 700;
+                margin-top: 1rem;
+                cursor: pointer;
+
+                & a {
+                    color: $purple;
+                }
+            }
         }
       }
 
@@ -184,5 +211,341 @@
     &__img {
       margin-top: 0rem;
     }
-  }
+
+    @include respond(tab) {
+        padding-bottom: 8rem;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2rem;
+        width: 90%;
+        max-width: 85rem;
+        margin-inline: auto;
+        
+
+
+        &__text {
+                order: 1;
+                width: 75%;
+                margin-inline: auto;
+        
+                &--rating {
+                    display: flex;
+                    align-items: center;
+                    & img {
+                        width: 1.2rem;
+                        &:not(:first-child) {
+                            margin-left: .4rem;
+                        }
+                    }
+
+                    & h5 {
+                        font-size: 1.3rem;
+                        font-family: $roboto;
+                        margin-left: .7rem;
+                    }
+                }
+        
+                &--h1 {
+                    margin-top: 0rem;
+                    font-size: 2.4rem;
+                    width: 100%;
+                }
+        
+                &--para {
+                    width: 100%;
+                }
+        
+                &--click {
+                    flex-direction: row;
+                    gap: 1.9rem;
+        
+                    &-btn {
+                        padding: 1rem 2rem;
+                    }
+        
+                    &-link {
+                        margin-top: 0rem;
+                    }
+                }
+        
+                &--check {
+                    flex-direction: row;
+                    gap: 1rem;
+                    &-container {
+                        display: flex;
+                        align-items: center;
+                        gap: .7rem;
+                    }
+                    &-img {
+                        width: 1.5rem;
+                    }
+                    &-para {
+                        font-size: 1.3rem;
+                    }
+                }
+        }
+        
+        &__img-box {
+            order: 6;
+            // margin-inline: 0;
+            width: 60%;
+            // max-width: 40rem;
+        }
+    
+        &__img {
+            margin-top: 0rem;
+        }
+    }
+}
+
+
+.employability{
+    width: 90%;
+    margin-inline: auto;
+
+
+    &__header {
+        margin-top: 4.5rem;
+
+        &--para {
+            color: $purple;
+            font-weight: 700;
+            font-family: $roboto;
+            font-size: 1.4rem;
+            
+        }
+        
+        &--h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            font-family: $roboto;
+            line-height: 1.2;
+        }
+    }
+    
+    &__box {
+        margin-top: 1.6rem;
+        
+        &--img {
+            width: 2rem;
+        }
+        
+        &--h4 {
+            margin-top: .7rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            font-family: $roboto;
+        }
+        
+        &--para{
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            font-family: $roboto;
+            width: 90%;
+        }
+    }
+
+    @include respond(tab) {
+        max-width: 80rem;
+
+        &__header {
+            &--para {
+                font-size: 1.6rem;
+            }
+    
+            &--h1 {
+                font-size: 3rem;
+                width: 65%;
+            }
+        }
+
+        &__boxes {
+            margin-top: 2rem;
+            display: flex;
+        }
+
+        &__box {
+            &--img {
+                width: 2.4rem;
+            }
+
+            &--h4 {
+                font-size: 1.6rem;
+            }
+
+            &--para {
+                font-size: 1.3rem;
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+
+.diversity {
+    margin-top: 5.5rem;
+    background-color: $purple;
+    border-radius: 9px;
+    padding: 1.8rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    &__text {
+        padding: 3rem 2.2rem;
+        width: 90%;
+        margin-inline: auto;
+
+
+        &--h2 {
+            color: white;
+            font-size: 2.6rem;
+            font-weight: 700;
+            font-family: $roboto;
+        }
+        
+        &--p {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 100;
+            font-family: $roboto;
+
+        }
+
+        &--btn {
+            background-color: white;
+            margin-top: 1.1rem;
+            color: $purple;
+            width: 100%;
+            padding: 1.2rem 1rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: $roboto;
+            border-radius: 7px;
+            border: none;
+        }
+    }
+
+
+    &__img-box {
+        width: 90%;
+        margin-inline: auto;
+        border-radius: 2.6rem;
+        padding: 0 3rem 0 3rem;
+    }
+
+
+    @include respond(tab) {
+        flex-direction: row;
+        align-items: center;
+        gap: 0rem;
+        max-width: 80rem;
+
+        &__text {
+            padding: 3rem 2.2rem;
+            // width: 90%;
+            margin-inline: auto;
+    
+    
+            &--h2 {
+                font-size: 2.6rem;
+            }
+    
+            &--p {
+                font-size: 1.4rem;    
+            }
+    
+            &--btn {
+                margin-top: 1.1rem;
+                color: $purple;
+                width: 14rem;
+                padding: 1.2rem .7rem;
+
+
+            }
+        }
+        &__img-box {
+            // width: 90%;
+            margin-inline: auto;
+            border-radius: 2.6rem;
+            padding: 0 3rem 0 3rem;
+        }
+    }
+}
+
+.testimonial {
+    margin-top: 4.8rem;
+
+
+    &__box {
+        border: 1px solid gray;
+        border-radius: 9px;
+        padding: 1.8rem;
+        margin-bottom: 2.3rem;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+
+        &--img {
+            width: 4.5rem;
+        }
+
+        &--h5 {
+            font-size: 1.4rem;
+            color: $purple;
+            font-family: $roboto;
+            font-weight: 700;
+        }
+        
+        &--para {
+            font-family: $roboto;
+            font-size: 1.6rem;
+            margin-top: -.4rem;
+        }
+    }
+    
+    &__para {
+        margin-top: 1.6rem;
+        font-size: 1.6rem;
+        font-family: $roboto;
+        font-weight: 400;
+    }
+
+    &__btn {
+        margin-top: 1.6rem;
+        width: 100%;
+        background-color: transparent;
+        color: $purple;
+        padding: 1.3rem 1rem;
+        font-size: 1.6rem;
+        font-family: $roboto;
+        font-weight: 700;
+        border: 1px solid gray;
+        border-radius: 9px;
+
+    }
+
+    // looks like a mess in tab mode
+    @include respond(lap) {
+        display: flex;
+        gap: 1.5rem;
+        width: 130%;
+        overflow: hidden;
+
+        &__box {
+            padding: 1.5rem 1.2rem;
+            margin-bottom: 0rem;
+        }
+
+        &__btn {
+            margin-bottom: .7rem;
+        }
+    }
+}
 }

@@ -113,9 +113,9 @@ ul {
   .header__nav--links {
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    display: flex;
-    gap: 1.4rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding-left: 1.2rem;
   }
   .header__nav--signing {
     font-size: 1.4rem;
@@ -124,21 +124,56 @@ ul {
     align-items: center;
     gap: 1.5rem;
   }
-  .header__nav--signing__btn {
+  .header__nav--signing--links {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: flex;
+    gap: 1.4rem;
+  }
+  .header__nav--signing--signing {
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .header__nav--signing--signing__btn {
     border: none;
     font-weight: 700;
+    cursor: pointer;
   }
-  .header__nav--signing__btn-up {
-    border: none;
+  .header__nav--signing--signing__btn-up {
     border-radius: 7px;
     padding: 1.1rem 1.4rem;
     background-color: rgba(40, 11, 202, 0.7490196078);
+    cursor: pointer;
   }
-  .header__nav--signing__btn-up a {
+  .header__nav--signing--signing__btn-up a {
     color: white;
     text-decoration: none;
     font-weight: 700;
   }
+}
+.header__nav__ham {
+  padding-right: 2rem;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .header__nav__ham {
+    display: none;
+  }
+}
+.header__nav__ham__btn-up {
+  border: none;
+  border-radius: 7px;
+  padding: 1.1rem 1.4rem;
+  background-color: rgba(40, 11, 202, 0.7490196078);
+}
+.header__nav__ham__btn-up a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
 }
 .header__ham {
   padding-right: 2rem;
@@ -285,6 +320,100 @@ ul {
   .create-portfolio__text--click-btn {
     padding: 1rem 2rem;
   }
+  .create-portfolio__text--click--click {
+    margin-top: 1.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .create-portfolio__text--click--click-btn {
+    background-color: rgba(40, 11, 202, 0.7490196078);
+    color: white;
+    padding: 1.3rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  .create-portfolio__text--click--click-link {
+    border: none;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .create-portfolio__text--click--click-link a {
+    color: rgba(40, 11, 202, 0.7490196078);
+  }
+  .create-portfolio__text--check {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .create-portfolio__text--check-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .create-portfolio__text--check-img {
+    width: 1.5rem;
+  }
+  .create-portfolio__text--check-para {
+    font-size: 1.3rem;
+  }
+  .create-portfolio__img-box {
+    order: 6;
+    width: 60%;
+  }
+  .create-portfolio__img {
+    margin-top: 0rem;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .create-portfolio {
+    padding-bottom: 8rem;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    width: 90%;
+    max-width: 85rem;
+    margin-inline: auto;
+  }
+  .create-portfolio__text {
+    order: 1;
+    width: 75%;
+    margin-inline: auto;
+  }
+  .create-portfolio__text--rating {
+    display: flex;
+    align-items: center;
+  }
+  .create-portfolio__text--rating img {
+    width: 1.2rem;
+  }
+  .create-portfolio__text--rating img:not(:first-child) {
+    margin-left: 0.4rem;
+  }
+  .create-portfolio__text--rating h5 {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    margin-left: 0.7rem;
+  }
+  .create-portfolio__text--h1 {
+    margin-top: 0rem;
+    font-size: 2.4rem;
+    width: 100%;
+  }
+  .create-portfolio__text--para {
+    width: 100%;
+  }
+  .create-portfolio__text--click {
+    flex-direction: row;
+    gap: 1.9rem;
+  }
+  .create-portfolio__text--click-btn {
+    padding: 1rem 2rem;
+  }
   .create-portfolio__text--click-link {
     margin-top: 0rem;
   }
@@ -309,5 +438,203 @@ ul {
   }
   .create-portfolio__img {
     margin-top: 0rem;
+  }
+}
+.create-portfolio .employability {
+  width: 90%;
+  margin-inline: auto;
+}
+.create-portfolio .employability__header {
+  margin-top: 4.5rem;
+}
+.create-portfolio .employability__header--para {
+  color: rgba(40, 11, 202, 0.7490196078);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.create-portfolio .employability__header--h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+.create-portfolio .employability__box {
+  margin-top: 1.6rem;
+}
+.create-portfolio .employability__box--img {
+  width: 2rem;
+}
+.create-portfolio .employability__box--h4 {
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.create-portfolio .employability__box--para {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+}
+@media (min-width: 600px) {
+  .create-portfolio .employability {
+    max-width: 80rem;
+  }
+  .create-portfolio .employability__header--para {
+    font-size: 1.6rem;
+  }
+  .create-portfolio .employability__header--h1 {
+    font-size: 3rem;
+    width: 65%;
+  }
+  .create-portfolio .employability__boxes {
+    margin-top: 2rem;
+    display: flex;
+  }
+  .create-portfolio .employability__box--img {
+    width: 2.4rem;
+  }
+  .create-portfolio .employability__box--h4 {
+    font-size: 1.6rem;
+  }
+  .create-portfolio .employability__box--para {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+}
+.create-portfolio .diversity {
+  margin-top: 5.5rem;
+  background-color: rgba(40, 11, 202, 0.7490196078);
+  border-radius: 9px;
+  padding: 1.8rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.create-portfolio .diversity__text {
+  padding: 3rem 2.2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.create-portfolio .diversity__text--h2 {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.create-portfolio .diversity__text--p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+.create-portfolio .diversity__text--btn {
+  background-color: white;
+  margin-top: 1.1rem;
+  color: rgba(40, 11, 202, 0.7490196078);
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border-radius: 7px;
+  border: none;
+}
+.create-portfolio .diversity__img-box {
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 2.6rem;
+  padding: 0 3rem 0 3rem;
+}
+@media (min-width: 600px) {
+  .create-portfolio .diversity {
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+    max-width: 80rem;
+  }
+  .create-portfolio .diversity__text {
+    padding: 3rem 2.2rem;
+    margin-inline: auto;
+  }
+  .create-portfolio .diversity__text--h2 {
+    font-size: 2.6rem;
+  }
+  .create-portfolio .diversity__text--p {
+    font-size: 1.4rem;
+  }
+  .create-portfolio .diversity__text--btn {
+    margin-top: 1.1rem;
+    color: rgba(40, 11, 202, 0.7490196078);
+    width: 14rem;
+    padding: 1.2rem 0.7rem;
+  }
+  .create-portfolio .diversity__img-box {
+    margin-inline: auto;
+    border-radius: 2.6rem;
+    padding: 0 3rem 0 3rem;
+  }
+}
+.create-portfolio .testimonial {
+  margin-top: 4.8rem;
+}
+.create-portfolio .testimonial__box {
+  border: 1px solid gray;
+  border-radius: 9px;
+  padding: 1.8rem;
+  margin-bottom: 2.3rem;
+}
+.create-portfolio .testimonial__user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.create-portfolio .testimonial__user--img {
+  width: 4.5rem;
+}
+.create-portfolio .testimonial__user--h5 {
+  font-size: 1.4rem;
+  color: rgba(40, 11, 202, 0.7490196078);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.create-portfolio .testimonial__user--para {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin-top: -0.4rem;
+}
+.create-portfolio .testimonial__para {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.create-portfolio .testimonial__btn {
+  margin-top: 1.6rem;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(40, 11, 202, 0.7490196078);
+  padding: 1.3rem 1rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border: 1px solid gray;
+  border-radius: 9px;
+}
+@media (min-width: 1000px) {
+  .create-portfolio .testimonial {
+    display: flex;
+    gap: 1.5rem;
+    width: 130%;
+    overflow: hidden;
+  }
+  .create-portfolio .testimonial__box {
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 0rem;
+  }
+  .create-portfolio .testimonial__btn {
+    margin-bottom: 0.7rem;
   }
 }/*# sourceMappingURL=style.css.map */
