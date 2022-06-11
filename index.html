@@ -7,7 +7,7 @@
     <title>Fiber | Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/style.css">
   </head>
   <body>
@@ -70,68 +70,102 @@
       </div>
 
       <section class="employability">
-        <p>Why Fiber</p>
-        <h1>A good portfolio means good employability.</h1>
-        <img src="./Assets/time.svg" />
-        <p>
-          With a selection of premade templates you can build out a portfolio in
-          less than 10 minutes.
-        </p>
-        <img src="./Assets/code.svg" />
-        <p>
-          Customize your personal portfolio even more with the ability to add
-          your own custom CSS styles.
-        </p>
-        <img src="./Assets/allSizes.svg" />
-        <p>
-          All Fiber templates are fully responsive to ensure the experience is
-          seamless across all devices.
-        </p>
-        <div class="diversity_portfolio">
-          <h2>Diversity your portfolio.</h2>
-          <p>
-            Create an even more impressive portfolio by creating case studies
-            for your projects. Simply follow our step-by-step guide.
-          </p>
-          <button>Start Free Trial</button>
-          <img src="./Assets/Page Image.png" />
+        <div class="employability__header">
+          <p class="employability__header--para">Why Fiber?</p>
+          <h1 class="employability__header--h1">A good portfolio means good employability.</h1>
         </div>
+        <div class="employability__boxes">
+          <div class="employability__box box--1">
+            <img src="./Assets/time.svg"  class="employability__box--img"/>
+            <h4 class="employability__box--h4"> Build in minutes</h4>
+            <p class="employability__box--para">
+              With a selection of premade templates you can build out a portfolio in
+              less than 10 minutes.
+            </p>
+          </div>
+          <div class="employability__box box--2">
+            <img src="./Assets/code.svg"  class="employability__box--img"/>
+            <h4 class="employability__box--h4">Add custom CSS</h4>
+            <p class="employability__box--para">
+              Customize your personal portfolio even more with the ability to add
+              your own custom CSS styles.
+            </p>
+          </div>
+          <div class="employability__box box--3">
+            <img src="./Assets/allSizes.svg"   class="employability__box--img"/>
+            <h4 class="employability__box--h4">Add custom CSS</h4>
+            <p class="employability__box--para">
+              All Fiber templates are fully responsive to ensure the experience is
+              seamless across all devices.
+            </p>
+          </div>
+        </div>
+
+        <div class="diversity">
+          <div class="diversity__text">
+            <h2 class="diversity__text--h2">Diversity your portfolio.</h2>
+            <p class="diversity__text--p">
+              Create an even more impressive portfolio by creating case studies
+              for your projects. Simply follow our step-by-step guide.
+            </p>
+            <button class="diversity__text--btn">Start Free Trial</button>
+          </div>
+          <div class="diversity__img-box">
+            <img src="./Assets/Page Image.png" class="diversity__img"/>
+          </div>
+        </div>
+
         <div class="testimonial">
-          <div class="testimonial_sarah">
-            <img src="./Assets/User Avatar.svg" />
-            <h5>Sarah Andrews</h5>
-            <p>$100 in revenue</p>
-            <p>
+          <div class="testimonial__box box--1">
+            <div class="testimonial__user">
+              <img src="./Assets/User Avatar.svg" class="testimonial__user--img"/>
+              <div class="testimonial__user--name">
+                <h5 class="testimonial__user--h5">Sarah Andrews</h5>
+                <p class="testimonial__user--para">$100k in revenue</p>
+              </div>
+            </div>
+            <p class="testimonial__para">
               Setting up my portfolio with Fiber took no more than 10 minutes.
               Since then, my portfolio has attracted a lot of clients and made
               me more than $100k.
             </p>
-            <button>View Sarah's Portfolio</button>
+            <button class="testimonial__btn">View Sarah's Portfolio</button>
           </div>
-          <div class="testimonial_mathew">
-            <img src="./Assets/User Avatar 2.svg" />
-            <h5>Mathew Higgins</h5>
-            <p>$20 in revenue</p>
-            <p>
+          
+          <div class="testimonial__box box--2">
+            <div class="testimonial__user">
+              <img src="./Assets/User Avatar 2.svg" class="testimonial__user--img"/>
+              <div class="testimonial__user--name">
+                <h5 class="testimonial__user--h5">Mathew Higgins</h5>
+                <p class="testimonial__user--para">$20k in revenue</p>
+              </div>
+            </div>
+            <p class="testimonial__para">
               I have been getting A LOT of leads ever since I used Fiber's
               premade templates, now I just need to work on my case studies and
               I'll be ready to go!
             </p>
-            <button>View Mathew's Portfolio</button>
+            <button class="testimonial__btn">View Mathew's Portfolio</button>
           </div>
-          <div class="testimonial_janice">
-            <img src="./Assets/User Avatar 32.svg" />
-            <h5>Mathew Higgins</h5>
-            <p>$20 in revenue</p>
-            <p>
+          <div class="testimonial__box box--3">
+            <div class="testimonial__user">
+              <img src="./Assets/User Avatar 32.svg"  class="testimonial__user--img"/>
+              <div class="testimonial__user--name">
+                <h5 class="testimonial__user--h5">Janice Dave</h5>
+                <p class="testimonial__user--para">$30k in revenue</p>
+              </div>
+            </div>
+            <p class="testimonial__para">
               I only just started freelancing this year have already made more
               than I ever in my full-time job. The templates are so amazing
             </p>
-            <button>View Janice's Portfolio</button>
+            <button class="testimonial__btn">View Janice's Portfolio</button>
           </div>
         </div>
+
       </section>
     </main>
+
     <footer>
       <div class="fiber">
         <h3>Fiber</h3>

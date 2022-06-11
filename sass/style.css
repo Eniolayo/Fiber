@@ -91,7 +91,7 @@ ul {
 .header__logo h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.4rem;
   padding-left: 1.2rem;
 }
 .header__nav {
@@ -107,14 +107,14 @@ ul {
     align-items: center;
   }
   .header__nav--links {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     display: flex;
     gap: 1.4rem;
   }
   .header__nav--signing {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
@@ -123,11 +123,13 @@ ul {
   .header__nav--signing__btn {
     border: none;
     font-weight: 700;
+    cursor: pointer;
   }
   .header__nav--signing__btn-up {
     border-radius: 7px;
     padding: 1.1rem 1.4rem;
     background-color: rgba(40, 11, 202, 0.7490196078);
+    cursor: pointer;
   }
   .header__nav--signing__btn-up a {
     color: white;
@@ -137,6 +139,7 @@ ul {
 }
 .header__ham {
   padding-right: 2rem;
+  cursor: pointer;
 }
 @media (min-width: 600px) {
   .header__ham {
@@ -189,6 +192,7 @@ ul {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   border: none;
+  cursor: pointer;
 }
 .create-portfolio__text--click-link {
   border: none;
@@ -196,6 +200,7 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-top: 1rem;
+  cursor: pointer;
 }
 .create-portfolio__text--click-link a {
   color: rgba(40, 11, 202, 0.7490196078);
@@ -230,7 +235,7 @@ ul {
 }
 @media (min-width: 600px) {
   .create-portfolio {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     flex-direction: row;
     align-items: center;
     padding-left: 2rem;
@@ -297,5 +302,206 @@ ul {
   }
   .create-portfolio__img {
     margin-top: 0rem;
+  }
+}
+
+.employability {
+  width: 90%;
+  margin-inline: auto;
+}
+.employability__header {
+  margin-top: 4.5rem;
+}
+.employability__header--para {
+  color: rgba(40, 11, 202, 0.7490196078);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.employability__header--h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+.employability__box {
+  margin-top: 1.6rem;
+}
+.employability__box--img {
+  width: 2rem;
+}
+.employability__box--h4 {
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.employability__box--para {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+}
+@media (min-width: 600px) {
+  .employability {
+    max-width: 80rem;
+  }
+  .employability__header--para {
+    font-size: 1.6rem;
+  }
+  .employability__header--h1 {
+    font-size: 3rem;
+    width: 65%;
+  }
+  .employability__boxes {
+    margin-top: 2rem;
+    display: flex;
+  }
+  .employability__box--img {
+    width: 2.4rem;
+  }
+  .employability__box--h4 {
+    font-size: 1.6rem;
+  }
+  .employability__box--para {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+}
+
+.diversity {
+  margin-top: 5.5rem;
+  background-color: rgba(40, 11, 202, 0.7490196078);
+  border-radius: 9px;
+  padding: 1.8rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.diversity__text {
+  padding: 3rem 2.2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.diversity__text--h2 {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.diversity__text--p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+.diversity__text--btn {
+  background-color: white;
+  margin-top: 1.1rem;
+  color: rgba(40, 11, 202, 0.7490196078);
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border-radius: 7px;
+  border: none;
+}
+.diversity__img-box {
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 2.6rem;
+  padding: 0 3rem 0 3rem;
+}
+@media (min-width: 600px) {
+  .diversity {
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+    max-width: 80rem;
+  }
+  .diversity__text {
+    padding: 3rem 2.2rem;
+    margin-inline: auto;
+  }
+  .diversity__text--h2 {
+    font-size: 2.6rem;
+  }
+  .diversity__text--p {
+    font-size: 1.4rem;
+  }
+  .diversity__text--btn {
+    margin-top: 1.1rem;
+    color: rgba(40, 11, 202, 0.7490196078);
+    width: 14rem;
+    padding: 1.2rem 0.7rem;
+  }
+  .diversity__img-box {
+    margin-inline: auto;
+    border-radius: 2.6rem;
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+.testimonial {
+  margin-top: 4.8rem;
+}
+.testimonial__box {
+  border: 1px solid gray;
+  border-radius: 9px;
+  padding: 1.8rem;
+  margin-bottom: 2.3rem;
+}
+.testimonial__user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial__user--img {
+  width: 4.5rem;
+}
+.testimonial__user--h5 {
+  font-size: 1.4rem;
+  color: rgba(40, 11, 202, 0.7490196078);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.testimonial__user--para {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  margin-top: -0.4rem;
+}
+.testimonial__para {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.testimonial__btn {
+  margin-top: 1.6rem;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(40, 11, 202, 0.7490196078);
+  padding: 1.3rem 1rem;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border: 1px solid gray;
+  border-radius: 9px;
+}
+@media (min-width: 1000px) {
+  .testimonial {
+    display: flex;
+    gap: 1.5rem;
+    width: 130%;
+    overflow: hidden;
+  }
+  .testimonial__box {
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 0rem;
+  }
+  .testimonial__btn {
+    margin-bottom: 0.7rem;
   }
 }/*# sourceMappingURL=style.css.map */
