@@ -5,27 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiber | Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/style.css">
   </head>
   <body>
-    <header>
-      <div class="logo"><h2>Fiber</h2></div>
-      <nav>
-        <ul class="nav_links">
+    <header class="header">
+      <div class="header__logo"><h2>Fiber</h2></div>
+      <nav class="header__nav">
+        <ul class="header__nav--links">
           <li>Community</li>
           <li>Pricing</li>
           <li>Features</li>
         </ul>
-        <ul class="signing">
-          <li><button>Sign In</button></li>
-          <li><button>Sign Up</button></li>
+        <ul class="header__nav--signing">
+          <li><button class="header__nav--signing__btn">Sign In</button></li>
+          <li><button class="header__nav--signing__btn-up"><a href="#">Sign Up</a></button></li>
         </ul>
       </nav>
+
+      <div class="header__ham">
+        <img src="./Assets/Hamburger Menu.svg" alt="">
+      </div>
     </header>
+
     <main>
+      <div class="container__cream">
       <section class="create-portfolio">
-        <div class="create-portfolio_text">
-          <div class="rating">
+        <div class="create-portfolio__text">
+          <div class="create-portfolio__text--rating">
             <img src="./Assets/star.svg" />
             <img src="./Assets/star.svg" />
             <img src="./Assets/star.svg" />
@@ -33,22 +42,33 @@
             <img src="./Assets/star.svg" />
             <h5>Rated 4.8/5(243 reviews)</h5>
           </div>
-          <h1>Create your portfolio in minutes.</h1>
-          <p>
-            With Fiber, you can setup your own personal in minutes with dozens
+          <h1 class="create-portfolio__text--h1">Create your portfolio in minutes.</h1>
+          <p class="create-portfolio__text--para">
+            With Fiber, you can setup your own personal portfolio in minutes with dozens
             of premade, beautiful templates.
           </p>
-          <button>Start Free Trial</button>
-          <button><a href="#">View Examples</a></button>
-          <img src="./Assets/Checkmark.svg" />
-          <p>No Credit Card Required</p>
-          <img src="./Assets/Checkmark.svg" />
-          <p>10 Free Templates</p>
+          <div class="create-portfolio__text--click">
+            <button class="create-portfolio__text--click-btn">Start Free Trial</button>
+            <button class="create-portfolio__text--click-link"><a href="#">View Examples</a></button>
+          </div>
+          <div class="create-portfolio__text--check">
+            <div class="create-portfolio__text--check-container">
+              <img src="./Assets/Checkmark.svg"  class="create-portfolio__text--check-img"/>
+              <p class="create-portfolio__text--check-para">No Credit Card Required</p>
+            </div>
+            <div class="create-portfolio__text--check-container">
+              <img src="./Assets/Checkmark.svg" class="create-portfolio__text--check-img"/>
+              <p class="create-portfolio__text--check-para">10 Free Templates</p>
+            </div>
+          </div>
         </div>
-        <div class="create-portfolio_img">
-          <img src="./Assets/hero-Illustration.png" />
+
+        <div class="create-portfolio__img-box">
+          <img src="./Assets/hero-Illustration.png" class="create-portfolio__img"/>
         </div>
       </section>
+      </div>
+
       <section class="employability">
         <p>Why Fiber</p>
         <h1>A good portfolio means good employability.</h1>

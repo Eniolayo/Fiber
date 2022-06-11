@@ -1,0 +1,191 @@
+@use '../sass/base' as *;
+
+.container__cream {
+    background-color: $cream;
+}
+.create-portfolio {
+    padding-bottom: 3.9rem;
+    // background-color: $cream;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        order: 4;
+        width: 75%;
+        margin-inline: auto;
+
+        &--rating {
+            display: none;
+        }
+
+        &--h1 {
+            margin-top: 1.3rem;
+            font-size: 2.4rem;
+            line-height: 1.1;
+            font-weight: 700;
+            font-family: $roboto;
+            width: 55%;
+        }
+        
+        &--para{
+            margin-top: .7rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-family: $roboto;
+            width: 85%;
+        }
+
+        &--click {
+            margin-top: 1.1rem;
+            display: flex;
+            flex-direction: column;
+
+            &-btn {
+                background-color: $purple;
+                color: white;
+                padding: 1.3rem 1.1rem;
+                border-radius: 6px;
+                font-size: 1.3rem;
+                font-family: $roboto;
+                border: none;
+                
+            }
+            
+            &-link {
+                border: none;
+                font-size: 1.5rem;
+                font-family: $roboto;
+                font-weight: 700;
+                margin-top: 1rem;
+
+                & a {
+                    color: $purple;
+                }
+            }
+        }
+
+        &--check {
+            margin-top: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            &-container {
+                display: flex;
+                align-items: center;
+                gap: .7rem;
+            }
+
+
+            &-img {
+                width: 2rem;
+
+            }
+
+            &-para {
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-weight: $roboto;
+            }
+        }
+
+    }
+
+    &__img-box {
+        order: 1;
+        margin-inline: auto;
+        width: 80%;
+        max-width: 40rem;
+        
+    }
+    
+    &__img {
+        margin-top: -4.5rem;
+
+    }
+
+    @include respond(tab) {
+        padding-bottom: 5rem;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2rem;
+        width: 90%;
+        max-width: 85rem;
+        margin-inline: auto;
+        
+
+
+        &__text {
+                order: 1;
+                width: 75%;
+                margin-inline: auto;
+        
+                &--rating {
+                    display: flex;
+                    align-items: center;
+                    & img {
+                        width: 1.2rem;
+                        &:not(:first-child) {
+                            margin-left: .4rem;
+                        }
+                    }
+
+                    & h5 {
+                        font-size: 1.3rem;
+                        font-family: $roboto;
+                        margin-left: .7rem;
+                    }
+                }
+        
+                &--h1 {
+                    margin-top: 0rem;
+                    font-size: 2.4rem;
+                    width: 100%;
+                }
+        
+                &--para {
+                    width: 100%;
+                }
+        
+                &--click {
+                    flex-direction: row;
+                    gap: 1.9rem;
+        
+                    &-btn {
+                        padding: 1rem 2rem;
+                    }
+        
+                    &-link {
+                        margin-top: 0rem;
+                    }
+                }
+        
+                &--check {
+                    flex-direction: row;
+                    gap: 1rem;
+                    &-container {
+                        display: flex;
+                        align-items: center;
+                        gap: .7rem;
+                    }
+                    &-img {
+                        width: 1.5rem;
+                    }
+                    &-para {
+                        font-size: 1.3rem;
+                    }
+                }
+        }
+        
+        &__img-box {
+            order: 6;
+            // margin-inline: 0;
+            width: 60%;
+            // max-width: 40rem;
+        }
+    
+        &__img {
+            margin-top: 0rem;
+        }
+    }
+}
