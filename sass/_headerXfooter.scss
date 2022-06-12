@@ -4,6 +4,7 @@
   background-color: $cream;
   padding: 1.9rem 0 1rem;
   border-bottom: 1px solid hsl(0, 1%, 73%);
+
   &_container {
     margin: 0 auto;
     width: $container;
@@ -11,37 +12,36 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &__logo h2 {
     font-family: $roboto;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-left: 1.2rem;
   }
 
   &__nav {
     display: none;
+  }
+
+  &__ham {
+    padding-right: 2rem;
+    cursor: pointer;
 
     @include respond(tab) {
-      display: flex;
-      width: 70%;
-      max-width: 55rem;
-      justify-content: space-between;
-      align-items: center;
+      display: none;
+    }
+  }
 
-      &--links {
-        font-size: 1.5rem;
-        font-family: $roboto;
-        font-weight: 700;
-        font-size: 2.4rem;
-        padding-left: 1.2rem;
-      }
 
-      &--signing {
-        font-size: 1.4rem;
-        font-family: $roboto;
+    @include respond(tab) {
+
+      &__nav {
         display: flex;
+        width: 77%;
+        max-width: 55rem;
+        justify-content: space-between;
         align-items: center;
-        gap: 1.5rem;
 
         &--links {
           font-size: 1.6rem;
@@ -54,19 +54,20 @@
         &--signing {
           font-size: 1.7rem;
           font-family: $roboto;
+          font-weight: 700;
           display: flex;
           align-items: center;
           gap: 1.5rem;
 
           &__btn {
             border: none;
-            font-weight: 700;
             cursor: pointer;
           }
-
+          
           &__btn-up {
             border-radius: 7px;
             padding: 1.1rem 1.4rem;
+            border: none;
             background-color: $purple;
             cursor: pointer;
 
@@ -79,35 +80,119 @@
         }
       }
     }
+}
 
-    &__ham {
-      padding-right: 2rem;
-      cursor: pointer;
 
-      @include respond(tab) {
-        display: none;
-      }
 
-      &__btn-up {
-        border: none;
-        border-radius: 7px;
-        padding: 1.1rem 1.4rem;
-        background-color: $purple;
 
-        & a {
-          color: white;
-          text-decoration: none;
-          font-weight: 700;
-        }
-      }
+.footer {
+  background-color: $cream;
+
+  &__container{
+    width: 90%;
+    max-width: 85rem;
+    margin-inline: auto;
+    padding: 5rem 0;
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  &__heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: $roboto;
+  }
+
+  &__list {
+    margin-top: .4rem;
+    
+    &--item {
+      padding: .2rem 0;
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 1.3rem;
     }
   }
-  &__ham {
-    padding-right: 2rem;
+
+  &__fiber {
+
+    & p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: $roboto;
+    }
+
+    &--gap {
+      margin-top: 1rem;
+    }
+  }
   
-    @include respond(tab) {
-      display: none;
+  &__sitemap {
+    margin-top: 2rem;
+  }
+  
+  &__resources{
+    margin-top: 2rem;
+  }
+  
+  &__company{
+    margin-top: 2rem;
+  }
+  
+  &__portfolios{
+    margin-top: 2rem;
+  }
+
+
+  @include respond(tabl) {
+
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__heading {
+      font-size: 1.8rem;
+    }
+
+    &__list {
+      margin-top: .4rem;
+
+      &--item {
+        padding: .2rem 0;
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 1.3rem;
+      }
+    }
+
+    &__fiber {
+      width: 35%;
+
+      & p {
+        font-size: 1.2rem;
+      }
+
+      &--gap {
+        margin-top: 1.4rem;
+      }
+    }
+
+    &__sitemap {
+      margin-top: 0;
+    }
+
+    &__resources {
+      margin-top: 0;
+    }
+
+    &__company {
+      margin-top: 0;
+    }
+
+    &__portfolios {
+      margin-top: 0;
     }
   }
 }
-
