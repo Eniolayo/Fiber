@@ -203,9 +203,7 @@
 
     &__img-box {
       order: 6;
-      // margin-inline: 0;
       width: 60%;
-      // max-width: 40rem;
     }
 
     &__img {
@@ -287,9 +285,7 @@
         
         &__img-box {
             order: 6;
-            // margin-inline: 0;
             width: 60%;
-            // max-width: 40rem;
         }
     
         &__img {
@@ -445,7 +441,6 @@
 
         &__text {
             padding: 3rem 2.2rem;
-            // width: 90%;
             margin-inline: auto;
     
     
@@ -467,7 +462,6 @@
             }
         }
         &__img-box {
-            // width: 90%;
             margin-inline: auto;
             border-radius: 2.6rem;
             padding: 0 3rem 0 3rem;
@@ -531,7 +525,6 @@
 
     }
 
-    // looks like a mess in tab mode
     @include respond(lap) {
         display: flex;
         gap: 1.5rem;
