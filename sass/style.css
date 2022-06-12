@@ -96,91 +96,59 @@ ul {
 .header__logo h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-left: 1.2rem;
 }
 .header__nav {
   display: none;
 }
+.header__ham {
+  padding-right: 2rem;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .header__ham {
+    display: none;
+  }
+}
 @media (min-width: 600px) {
   .header__nav {
     display: flex;
-    width: 70%;
+    width: 77%;
     max-width: 55rem;
     justify-content: space-between;
     align-items: center;
   }
   .header__nav--links {
-    font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 2.4rem;
-    padding-left: 1.2rem;
-  }
-  .header__nav--signing {
-    font-size: 1.4rem;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  .header__nav--signing--links {
     font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     display: flex;
     gap: 1.4rem;
   }
-  .header__nav--signing--signing {
+  .header__nav--signing {
     font-size: 1.7rem;
     font-family: "Roboto", sans-serif;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 1.5rem;
   }
-  .header__nav--signing--signing__btn {
+  .header__nav--signing__btn {
     border: none;
-    font-weight: 700;
     cursor: pointer;
   }
-  .header__nav--signing--signing__btn-up {
+  .header__nav--signing__btn-up {
     border-radius: 7px;
     padding: 1.1rem 1.4rem;
+    border: none;
     background-color: rgba(40, 11, 202, 0.7490196078);
     cursor: pointer;
   }
-  .header__nav--signing--signing__btn-up a {
+  .header__nav--signing__btn-up a {
     color: white;
     text-decoration: none;
     font-weight: 700;
-  }
-}
-.header__nav__ham {
-  padding-right: 2rem;
-  cursor: pointer;
-}
-@media (min-width: 600px) {
-  .header__nav__ham {
-    display: none;
-  }
-}
-.header__nav__ham__btn-up {
-  border: none;
-  border-radius: 7px;
-  padding: 1.1rem 1.4rem;
-  background-color: rgba(40, 11, 202, 0.7490196078);
-}
-.header__nav__ham__btn-up a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-}
-.header__ham {
-  padding-right: 2rem;
-}
-@media (min-width: 600px) {
-  .header__ham {
-    display: none;
   }
 }
 
