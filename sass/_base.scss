@@ -86,7 +86,7 @@ $roboto: "Roboto", sans-serif;
 //colour
 $purple: #280bcabf;
 $cream: #dad7cd8d;
-$container:min(90%, 120rem);
+$container:min(90%, 100rem);
 
 @mixin respond($bp) {
   @if $bp == phone {
