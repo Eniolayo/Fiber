@@ -88,19 +88,13 @@
     }
 }
 
-
-
-
 .footer {
   background-color: $cream;
 
   &__container{
-    width: 90%;
-    max-width: 85rem;
+    width: $container;
     margin-inline: auto;
     padding: 5rem 0;
-    // display: flex;
-    // flex-direction: column;
   }
 
   &__heading{
@@ -153,7 +147,7 @@
   @include respond(tabl) {
 
     &__container {
-      width: 100%;
+      width: $container;
       display: flex;
       justify-content: space-between;
     }

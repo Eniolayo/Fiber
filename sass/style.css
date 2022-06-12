@@ -163,8 +163,7 @@ ul {
   background-color: rgba(218, 215, 205, 0.5529411765);
 }
 .footer__container {
-  width: 90%;
-  max-width: 85rem;
+  width: min(90%, 100rem);
   margin-inline: auto;
   padding: 5rem 0;
 }
@@ -204,7 +203,7 @@ ul {
 }
 @media (min-width: 850px) {
   .footer__container {
-    width: 100%;
+    width: min(90%, 100rem);
     display: flex;
     justify-content: space-between;
   }
