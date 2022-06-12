@@ -100,6 +100,11 @@ $container:min(90%, 120rem);
       @content;
     }
   }
+  @if $bp == tabl {
+    @media (min-width: 850px) {
+      @content;
+    }
+  }
 
   @if $bp == lap {
     @media (min-width: 1000px) {

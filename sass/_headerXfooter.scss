@@ -79,9 +79,120 @@
           }
         }
       }
-
-    
     }
 }
 
 
+
+
+.footer {
+  background-color: $cream;
+
+  &__container{
+    width: 90%;
+    max-width: 85rem;
+    margin-inline: auto;
+    padding: 5rem 0;
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  &__heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: $roboto;
+  }
+
+  &__list {
+    margin-top: .4rem;
+    
+    &--item {
+      padding: .2rem 0;
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__fiber {
+
+    & p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: $roboto;
+    }
+
+    &--gap {
+      margin-top: 1rem;
+    }
+  }
+  
+  &__sitemap {
+    margin-top: 2rem;
+  }
+  
+  &__resources{
+    margin-top: 2rem;
+  }
+  
+  &__company{
+    margin-top: 2rem;
+  }
+  
+  &__portfolios{
+    margin-top: 2rem;
+  }
+
+
+  @include respond(tabl) {
+
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__heading {
+      font-size: 1.8rem;
+    }
+
+    &__list {
+      margin-top: .4rem;
+
+      &--item {
+        padding: .2rem 0;
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 1.3rem;
+      }
+    }
+
+    &__fiber {
+      width: 35%;
+
+      & p {
+        font-size: 1.2rem;
+      }
+
+      &--gap {
+        margin-top: 1.4rem;
+      }
+    }
+
+    &__sitemap {
+      margin-top: 0;
+    }
+
+    &__resources {
+      margin-top: 0;
+    }
+
+    &__company {
+      margin-top: 0;
+    }
+
+    &__portfolios {
+      margin-top: 0;
+    }
+  }
+}
