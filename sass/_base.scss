@@ -86,7 +86,9 @@ ul {
 $roboto: "Roboto", sans-serif;
 //colour
 $purple: #280bcabf;
+$purple-100: #280bca;
 $cream: #dad7cd8d;
+$cream-100: #dad7cdea;
 $container:min(90%, 100rem);
 
 @mixin respond($bp) {

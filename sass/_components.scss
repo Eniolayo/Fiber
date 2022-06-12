@@ -294,6 +294,7 @@
 .employability {
   width: $container;
   margin-inline: auto;
+  padding-block: 5rem;
 
   &__header {
     margin-top: 4.5rem;
@@ -376,7 +377,8 @@
   margin-top: 5.5rem;
   background-color: $purple;
   border-radius: 9px;
-  padding: 1.8rem 1.5rem 0 1.5rem;
+  padding-block: 4rem 0;
+  padding-inline: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -396,7 +398,7 @@
     &--p {
       color: white;
       font-size: 1.4rem;
-      font-weight: 100;
+      font-weight: normal;
       font-family: $roboto;
     }
 
@@ -445,7 +447,13 @@
         width: 14rem;
         padding: 1.2rem 0.7rem;
         cursor: pointer;
+        opacity: .85;
+        transition: opacity 300ms ease-in;
+        &:hover{
+          opacity: 1;
+        }
       }
+
     }
     &__img-box {
       margin-inline: auto;
@@ -463,6 +471,9 @@
     border-radius: 9px;
     padding: 1.8rem;
     margin-bottom: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__user {
@@ -504,8 +515,15 @@
     font-size: 1.6rem;
     font-family: $roboto;
     font-weight: 700;
-    border: 1px solid gray;
+    border: 1px solid $cream-100;
     border-radius: 9px;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    &:hover{
+      border: 1px solid gray;
+      color: $purple-100;
+      background: rgba(0, 0, 0, 0.048);
+    }
   }
 
   @include respond(lap) {
