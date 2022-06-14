@@ -95,7 +95,7 @@ ul {
   align-items: center;
 }
 .header__logo h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   padding-left: 1.2rem;
@@ -122,14 +122,14 @@ ul {
   }
   .header__nav--links {
     font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     display: flex;
     gap: 1.4rem;
   }
   .header__nav--signing {
     font-size: 1.7rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -170,21 +170,21 @@ ul {
 .footer__heading {
   font-size: 1.8rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .footer__list {
   margin-top: 0.4rem;
 }
 .footer__list--item {
   padding: 0.2rem 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
 }
 .footer__fiber p {
   font-size: 1.4rem;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .footer__fiber--gap {
   margin-top: 1rem;
@@ -215,7 +215,7 @@ ul {
   }
   .footer__list--item {
     padding: 0.2rem 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
   }
@@ -264,14 +264,14 @@ ul {
   font-size: 4rem;
   line-height: 1.1;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 55%;
 }
 .create-portfolio__text--para {
   margin-top: 0.7rem;
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 85%;
 }
 .create-portfolio__text--click {
@@ -285,7 +285,7 @@ ul {
   padding: 1.3rem 1.1rem;
   border-radius: 6px;
   font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   border: none;
   cursor: pointer;
   opacity: 0.7;
@@ -297,7 +297,7 @@ ul {
 .create-portfolio__text--click-link {
   border: none;
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-top: 1rem;
   background: transparent;
@@ -325,7 +325,7 @@ ul {
 .create-portfolio__text--check-para {
   font-size: 1.5rem;
   font-weight: 400;
-  font-weight: "Roboto", sans-serif;
+  font-weight: "Inter", sans-serif;
 }
 .create-portfolio__img-box {
   order: 1;
@@ -360,7 +360,7 @@ ul {
   }
   .create-portfolio__text--rating h5 {
     font-size: 1.3rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-left: 0.7rem;
   }
   .create-portfolio__text--h1 {
@@ -389,14 +389,14 @@ ul {
     padding: 1.3rem 1.1rem;
     border-radius: 6px;
     font-size: 1.3rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     border: none;
     cursor: pointer;
   }
   .create-portfolio__text--click--click-link {
     border: none;
     font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     margin-top: 1rem;
     cursor: pointer;
@@ -453,7 +453,7 @@ ul {
   }
   .create-portfolio__text--rating h5 {
     font-size: 1.3rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-left: 0.7rem;
   }
   .create-portfolio__text--h1 {
@@ -509,13 +509,13 @@ ul {
 .employability__header--para {
   color: rgba(40, 11, 202, 0.7490196078);
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
 }
 .employability__header--h1 {
   font-size: 2.3rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.2;
 }
 .employability__box {
@@ -528,13 +528,13 @@ ul {
   margin-top: 0.7rem;
   font-size: 1.3rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .employability__box--para {
   margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 90%;
 }
 @media (min-width: 600px) {
@@ -580,13 +580,13 @@ ul {
   color: white;
   font-size: 2.6rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .diversity__text--p {
   color: white;
   font-size: 1.4rem;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .diversity__text--btn {
   background-color: white;
@@ -596,7 +596,7 @@ ul {
   padding: 1.2rem 1rem;
   font-size: 1.6rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   border-radius: 7px;
   border: none;
 }
@@ -665,18 +665,18 @@ ul {
 .testimonial__user--h5 {
   font-size: 1.4rem;
   color: rgba(40, 11, 202, 0.7490196078);
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 .testimonial__user--para {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   margin-top: -0.4rem;
 }
 .testimonial__para {
   margin-top: 1.6rem;
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 .testimonial__btn {
@@ -686,7 +686,7 @@ ul {
   color: rgba(40, 11, 202, 0.7490196078);
   padding: 1.3rem 1rem;
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   border: 1px solid rgba(218, 215, 205, 0.9176470588);
   border-radius: 9px;
