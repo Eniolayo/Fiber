@@ -21,6 +21,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /*
@@ -82,11 +83,13 @@ ul {
 }
 
 //font
-$roboto: "Roboto", sans-serif;
+$roboto: 'Inter', sans-serif;
 //colour
 $purple: #280bcabf;
+$purple-100: #280bca;
 $cream: #dad7cd8d;
-$container:min(90%, 120rem);
+$cream-100: #dad7cdea;
+$container:min(90%, 100rem);
 
 @mixin respond($bp) {
   @if $bp == phone {
