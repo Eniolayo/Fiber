@@ -103,8 +103,13 @@ label{
     margin-bottom: .3rem;
 }
 
+.password{
+    // position: relative;
+}
 .password--img {
     cursor: pointer;
     display: inline;
+    // position: absolute;
+
     margin-left: -40px;
 }
