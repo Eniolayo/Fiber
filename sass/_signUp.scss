@@ -90,8 +90,6 @@
     }
 
 
-
-
     &__img-box{
         display: none;
     }
@@ -103,4 +101,10 @@ label{
     font-weight: 600;
     font-family: $roboto;
     margin-bottom: .3rem;
+}
+
+.password--img {
+    cursor: pointer;
+    display: inline;
+    margin-left: -40px;
 }

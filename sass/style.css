@@ -798,4 +798,10 @@ label {
   font-weight: 600;
   font-family: "Inter", sans-serif;
   margin-bottom: 0.3rem;
+}
+
+.password--img {
+  cursor: pointer;
+  display: inline;
+  margin-left: -40px;
 }/*# sourceMappingURL=style.css.map */
