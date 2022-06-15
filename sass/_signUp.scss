@@ -93,6 +93,64 @@
     &__img-box{
         display: none;
     }
+
+    @include respond(tab) {
+        display: flex;
+        padding: 1.1rem 1.8rem 5rem 1.8rem;
+        
+        &__text {
+            width:50%;
+            margin-inline: auto;
+        }
+        
+        
+        &__img-box {
+            display: block;
+            width: 50%;
+            background-color: $purple;
+            padding: 0 2.2rem;
+        }
+
+        &__img {
+            width: min(100%, 45rem);
+            margin-inline: auto ;
+            margin-top: 10rem;
+
+            &--heading {
+                margin-top: 1.7rem;
+                color: white;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $roboto;
+            }
+            
+            &--para {
+                margin-top: .3rem;
+                color: white;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $roboto;
+                width: 62%;
+                margin-inline: auto;
+                
+            }
+        }
+
+        &__small-boxes{
+            margin-top: 1rem;
+            display: flex;
+            gap: 1.2rem;
+            justify-content: center;
+        }
+
+        &__small-box{
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 1222px;
+            border: 1px solid rgb(230, 209, 209);
+            cursor: pointer;
+        }
+    } 
 }
 
 label{
@@ -112,4 +170,8 @@ label{
     // position: absolute;
 
     margin-left: -40px;
+}
+
+.box--1 {
+    background-color: white;
 }
