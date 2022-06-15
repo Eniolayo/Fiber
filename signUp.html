@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="/sass/style.css"> -->
+    <link rel="stylesheet" href="/sass/style.css">
     <title>Sign up page</title>
 </head>
 <body>
@@ -27,21 +27,23 @@
                 </div>
                 <div class="sign__form--group group--3">
                     <label for="password">Password</label>
-                    <input type="text" name="password" class="sign__form--input" required placeholder="At least 8 characters">
+                    <input type="password" name="password" class="sign__form--input password" id="password" required placeholder="At least 8 characters">
+                    <img src="/Assets/hide password.svg" id="togglePassword" class="password--img" alt="">
                 </div>
+
+                <div class="sign__form--info">
+                    <input type="checkbox" name="check" class="sign__form--info-check" id="checkme">
+                    <p class="sign__form--info-para">
+                        By creating an account on FIber, you agree to the
+                        <a href="#" class="sign__form--info-link">Terms & Conditions.</a>
+                    </p>
+                </div>
+
+                <button type="submit" class="sign__form--btn">Create Fiber Account</button>
             </form>
-            <div class="sign__text--info">
-                <p class="sign__text--info-para">
-                    By creating an account on FIber, you agree to the 
-                </p>
-                <a href="#" class="sign__text--info-link">Terms & Conditions.</a>
-            </div>
-
-            <button class="sign__text--btn">Create Fiber Account</button>
             <div class="sign__text--log">
-                <p class="sign__text--log-para">Already have an account?</p>
-                <a href="#" class="sign__text--log-link">Sign in</a>
-
+                <p class="sign__text--log-para">Already have an account?<a href="index.html" class="sign__text--log-link">Sign in</a>
+                </p>
             </div>
         </div>
 
@@ -55,5 +57,19 @@
             </p>
         </div>
     </section>
+
+
+    <script defer>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
 </body>
 </html>
