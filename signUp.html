@@ -1,75 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/sass/style.css">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sass/style.css" />
     <title>Sign up page</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="sign">
-        <div class="sign__text">
-            <h3 class="sign__text--logo">Fiber</h3>
+      <div class="sign__text">
+        <h3 class="sign__text--logo">Fiber</h3>
 
-            <h2 class="sign__text--heading">
-                Create your Fiber account
-            </h2>
+        <h2 class="sign__text--heading">Create your Fiber account</h2>
 
-            <form action="#" class="sign__form">
-                <div class="sign__form--group group--1">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="sign__form--input" required placeholder="John Doe">
-                </div>
-                <div class="sign__form--group group--2">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" required   class="sign__form--input" placeholder="John@example.com">
-                </div>
-                <div class="sign__form--group group--3">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" class="sign__form--input password" id="password" required placeholder="At least 8 characters">
-                    <img src="/Assets/hide password.svg" id="togglePassword" class="password--img" alt="">
-                </div>
+        <form action="#" class="sign__form">
+          <div class="sign__form--group group--1">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              class="sign__form--input"
+              required
+              placeholder="John Doe"
+            />
+          </div>
+          <div class="sign__form--group group--2">
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              name="email"
+              required
+              class="sign__form--input"
+              placeholder="John@example.com"
+            />
+          </div>
+          <div class="sign__form--group group--3">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="sign__form--input password"
+              id="password"
+              required
+              placeholder="At least 8 characters"
+            />
+            <img
+              src="/Assets/hide password.svg"
+              id="togglePassword"
+              class="password--img"
+              alt=""
+            />
+          </div>
 
-                <div class="sign__form--info">
-                    <input type="checkbox" name="check" class="sign__form--info-check" id="checkme">
-                    <label class="sign__form--info-para">
-                        By creating an account on FIber, you agree to the
-                        <a href="#" class="sign__form--info-link">Terms & Conditions.</a>
-                    </label>
-                </div>
+          <div class="sign__form--info">
+            <input
+              type="checkbox"
+              name="check"
+              class="sign__form--info-check"
+              id="checkme"
+            />
+            <label class="sign__form--info-para">
+              By creating an account on FIber, you agree to the
+              <a href="#" class="sign__form--info-link">Terms & Conditions.</a>
+            </label>
+          </div>
 
-                <button type="submit" class="sign__form--btn">Create Fiber Account</button>
-            </form>
-            <div class="sign__text--log">
-                <p class="sign__text--log-para">Already have an account?<a href="index.html" class="sign__text--log-link">Sign in</a>
-                </p>
-            </div>
+          <button type="submit" class="sign__form--btn">
+            Create Fiber Account
+          </button>
+        </form>
+        <div class="sign__text--log">
+          <p class="sign__text--log-para">
+            Already have an account?<a
+              href="index.html"
+              class="sign__text--log-link"
+              >Sign in</a
+            >
+          </p>
         </div>
+      </div>
 
-        <div class="sign__img-box">
-            <img src="/Assets/Sign Up Image.png" alt="" class="sign__img">
-            <h2 class="sign__img--heading">
-                Unparalled Templates
-            </h2>
-            <p class="sign__img--para">
-                Crafted by a team of professional designers, our templates are eunparalleled in the market.
-            </p>
-        </div>
+      <div class="sign__img-box">
+        <img src="/Assets/Sign Up Image.png" alt="" class="sign__img" />
+        <h2 class="sign__img--heading">Unparalled Templates</h2>
+        <p class="sign__img--para">
+          Crafted by a team of professional designers, our templates are
+          eunparalleled in the market.
+        </p>
+        <span class="highlighted"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </section>
 
-
     <script>
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
 
-        togglePassword.addEventListener('click', function (e) {
-            // toggle the type attribute
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            // toggle the eye slash icon
-            this.classList.toggle('fa-eye-slash');
-        });
+      togglePassword.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("fa-eye-slash");
+      });
     </script>
-</body>
+  </body>
 </html>
