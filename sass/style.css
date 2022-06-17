@@ -720,6 +720,8 @@ ul {
   margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
+  width: min(90%, 100rem);
+  margin: 0 auto;
 }
 .sign__text {
   width: 47%;
@@ -749,6 +751,7 @@ ul {
 }
 .sign__form--group {
   margin-bottom: 2.5rem;
+  position: relative;
 }
 .sign__form--input {
   width: 100%;
@@ -805,6 +808,7 @@ label {
 
 .password--img {
   cursor: pointer;
-  display: inline;
-  margin-left: -40px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
 }/*# sourceMappingURL=style.css.map */
