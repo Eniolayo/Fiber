@@ -107,8 +107,9 @@
         font-size: 3.5rem;
     }
     &--para{
-        font-size: 1.9rem;
-        margin: 0 auto;
+        font-size: 1.7rem;
+        margin: 0 auto 1rem;
+        line-height: 1.1;
         width: 70%;
     }
   }
@@ -127,4 +128,23 @@ label {
   position: absolute;
   left: 90%;
   top:50%;
+}
+.highlighted{
+    background: rgba(255, 255, 255);
+    
+}
+.highlighted,
+.faded-highlight{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.faded-highlight{
+    background: rgba(255, 255, 255, 0.336);
+}
+.identifiers{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    margin: 0 auto;
 }
