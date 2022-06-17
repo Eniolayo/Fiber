@@ -2,10 +2,13 @@
 
 .sign {
     margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
     
     &__text {
-        width: min(90%, 80rem);
+        width: 47%;
         margin-inline: auto;
+        padding: 2rem;
 
         &--logo {
             font-size: 2rem;
@@ -42,7 +45,7 @@
         }
         
         &--input {
-            width: min(90%, 60rem);
+            width: 100%;
             padding: 1.5rem 1.1rem;
             border-radius: 7px;
             border: 1px solid rgba(128, 128, 128, 0.425);
@@ -76,7 +79,7 @@
         }
 
         &--btn {
-            width: 95%;
+            width: 100%;
             padding: 1.8rem 1rem;
             font-size: 1.4rem;
             color: white;
@@ -91,7 +94,7 @@
 
 
     &__img-box{
-        display: none;
+        width: 47%;
     }
 }
 

@@ -718,10 +718,13 @@ ul {
 
 .sign {
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 .sign__text {
-  width: min(90%, 80rem);
+  width: 47%;
   margin-inline: auto;
+  padding: 2rem;
 }
 .sign__text--logo {
   font-size: 2rem;
@@ -748,7 +751,7 @@ ul {
   margin-bottom: 2.5rem;
 }
 .sign__form--input {
-  width: min(90%, 60rem);
+  width: 100%;
   padding: 1.5rem 1.1rem;
   border-radius: 7px;
   border: 1px solid rgba(128, 128, 128, 0.425);
@@ -777,7 +780,7 @@ ul {
   font-weight: 500;
 }
 .sign__form--btn {
-  width: 95%;
+  width: 100%;
   padding: 1.8rem 1rem;
   font-size: 1.4rem;
   color: white;
@@ -789,7 +792,7 @@ ul {
   cursor: pointer;
 }
 .sign__img-box {
-  display: none;
+  width: 47%;
 }
 
 label {
